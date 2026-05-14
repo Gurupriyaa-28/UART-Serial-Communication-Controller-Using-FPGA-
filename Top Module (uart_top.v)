@@ -1,0 +1,42 @@
+
+module uart_top(
+    input clk,
+    input reset,
+    input tx_start,
+    input [7:0] data_in,
+    output tx,
+    output [7:0] data_out,
+    output rx_done
+);
+
+wire tick;
+wire tx_line;
+
+baud_gen bg(
+    .clk(clk),
+    .reset(reset),
+    .tick(tick)
+);
+
+uart_tx transmitter(
+    .clk(clk),
+    .reset(reset),
+    .tick(tick),
+    .tx_start(tx_start),
+    .data_in(data_in),
+    .tx(tx_line),
+    .busy()
+);
+
+uart_rx receiver(
+    .clk(clk),
+    .reset(reset),
+    .tick(tick),
+    .rx(tx_line),
+    .data_out(data_out),
+    .rx_done(rx_done)
+);
+
+assign tx = tx_line;
+
+endmodule
