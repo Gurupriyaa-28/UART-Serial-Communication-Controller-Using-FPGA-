@@ -6,25 +6,39 @@ This project presents the design and implementation of a UART (Universal Asynchr
 ✨ Features
 
 🔹 UART-based asynchronous serial communication
+
 🔹 Separate Transmitter (TX) and Receiver (RX) modules
+
 🔹 Configurable baud rate generation
+
 🔹 FPGA implementation using Verilog HDL
+
 🔹 Modular and reusable hardware architecture
+
 🔹 Real-time simulation and waveform verification
+
 🔹 Reliable serial data transmission and reception
 
 🛠️ Technologies Used
 
 🔸 Verilog HDL
+
 🔸 FPGA Development Board
+
 🔸 Quartus Prime / Vivado
+
 🔸 ModelSim Simulator
+
 
 📂 Project Structure
 ├── baud_gen.v
+
 ├── uart_tx.v
+
 ├── uart_rx.v
+
 ├── uart_top.v
+
 ├── tb_uart_top.v
 
 ⚙️ Working Principle
@@ -36,6 +50,7 @@ The baud rate generator provides synchronized timing pulses required for accurat
 This design ensures reliable asynchronous communication between digital systems without requiring a shared clock signal.
 
 🧩 Modules
+
 🔹 1. Baud Rate Generator
 
 The baud rate generator is responsible for producing timing pulses required for UART communication. It divides the high-frequency FPGA system clock into a lower frequency corresponding to the desired baud rate (e.g., 9600 bps). These timing signals synchronize both transmission and reception processes.
@@ -59,32 +74,50 @@ The testbench is designed to verify the functionality of the UART system through
 🖥️ Simulation & Verification
 
 ✅ Functional simulation performed using ModelSim/Vivado
+
 ✅ Waveform analysis used to verify UART transmission and reception
+
 ✅ Successful synthesis and compilation on FPGA design tools
+
 ✅ Verified serial communication between TX and RX modules
+
 
 📌 Applications
 
 🔹 Embedded system communication
+
 🔹 FPGA-based communication interfaces
+
 🔹 Serial data transfer systems
+
 🔹 Microcontroller-to-device communication
+
 🔹 Industrial and automation systems
+
 
 🌟 Advantages
 
 ✔️ Modular and reusable Verilog HDL design
+
 ✔️ Easy customization of baud rate and communication parameters
+
 ✔️ Efficient FPGA resource utilization
+
 ✔️ Reliable asynchronous serial communication
+
 ✔️ Suitable for real-time digital communication systems
+
 
 👨‍💻 Team Members
 
 👤 Dishika – 24BEC0486
+
 👤 Gurupriyaa – 24BEC0139
+
 👤 Nicole T – 24BEC0387
+
 👤 Akhila N – 24BML0078
+
 
 🎓 Guide
 
