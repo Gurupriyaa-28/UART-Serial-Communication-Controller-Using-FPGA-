@@ -162,14 +162,6 @@ Parallel Output Data
 |---|---|
 | Dishika | 24BEC0486 |
 | Gurupriyaa | 24BEC0139 |
-| Nicole T | 24BEC0387 |
-| Akhila N | 24BML0078 |
-
----
-
-## <img src="https://img.icons8.com/fluency/48/training.png" width="24"> Guide
-
-**Dr. Palla Penchalaiah**
 
 ---
 
